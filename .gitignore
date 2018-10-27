@@ -1,0 +1,13 @@
+node_modules/
+**/node_modules
+**/yarn.lock
+public
+.gatsby-context.js
+.DS_Store
+.intermediate-representation/
+.cache/
+yarn.lock
+.env
+yarn-error.log
+.cache
+.vscode

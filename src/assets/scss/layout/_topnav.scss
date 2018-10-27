@@ -1,0 +1,33 @@
+#topnav {
+	@include vendor('display', 'flex');
+		@include vendor('flex-direction', 'row');
+		@include vendor('justify-content', 'flex-end');
+		@include vendor('transition', (
+			'transform #{_duration(article)} ease-in-out',
+			'filter #{_duration(article)} ease-in-out',
+			'opacity #{_duration(article)} ease-in-out',
+		));
+
+		max-width: 100%;
+		text-align: center;
+		height: 64px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		line-height: 64px;
+
+		.inner-third {
+			width: calc(100%/3);
+			display: flex;
+			flex-flow: row;
+			justify-content: space-evenly;
+
+			* > a {
+				font-weight: 600;
+				color: rgba(53, 53, 53, 0.8);
+				text-decoration: none;
+				border-bottom: none;
+			}
+		}
+}

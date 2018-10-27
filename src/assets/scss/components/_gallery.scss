@@ -1,0 +1,23 @@
+.gallery {
+	column-count: 3;
+	column-gap:.5em;
+	margin-bottom:4em;
+	overflow: scroll;
+
+	.galleryItem {
+		display: inline-block;
+		width: 100%;
+
+		.galleryImage {
+			width: 100%;
+			opacity: .7;
+			filter: grayscale(100%);
+
+			&:hover {
+				filter: grayscale(0%);
+				cursor: pointer;
+				opacity: 1;
+			}
+		}
+	}
+}
